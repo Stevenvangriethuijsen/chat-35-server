@@ -6,7 +6,7 @@ const app = express();
 const corsMiddleware = cors();
 const parser = express.json();
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 app.use(corsMiddleware);
 app.use(parser);
 
